@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-ramesh-printing" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>printing</name>
+    <js-module name="printing" src="www/printing.js">
+        <clobbers target="cordova.plugins.printing"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="printing">
+                <param name="android-package" value="cordova.plugin.ramesh.printing.printing"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/printing.java" target-dir="src/cordova/plugin/ramesh/printing/printing"/>
+        <lib-file src="src/android/lib/Versa_2T_3T_BTP_CommonAPI.jar" arch="device" />
+        <lib-file src="src/android/lib/Versa_2T_3T_BTP_CommonAPI.jar" arch="simulator" />
+    </platform>
+</plugin>

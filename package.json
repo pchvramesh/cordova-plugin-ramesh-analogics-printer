@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-ramesh-printing",
+  "version": "0.0.1",
+  "description": "Thermal printer plugin",
+  "cordova": {
+    "id": "cordova-plugin-ramesh-printing",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Ramesh Kumar",
+  "license": "ISC"
+}
